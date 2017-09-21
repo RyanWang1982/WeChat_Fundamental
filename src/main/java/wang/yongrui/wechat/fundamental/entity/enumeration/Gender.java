@@ -4,7 +4,6 @@
 package wang.yongrui.wechat.fundamental.entity.enumeration;
 
 import lombok.Getter;
-import wang.yongrui.wechat.fundamental.entity.enumeration.BasicEnum;
 
 /**
  * @author Wang Yongrui
@@ -26,9 +25,9 @@ public enum Gender implements BasicEnum {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
-	 * com.sap.cloud.scp.sso.security.entity.enumeration.BasicEnum#getName()
+	 * wang.yongrui.wechat.fundamental.entity.enumeration.BasicEnum#getName()
 	 */
 	@Override
 	public String getName() {

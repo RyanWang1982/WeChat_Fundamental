@@ -25,9 +25,9 @@ public enum TargetDomain implements BasicEnum {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
-	 * com.sap.cloud.scp.sso.security.entity.enumeration.BasicEnum#getName()
+	 * wang.yongrui.wechat.fundamental.entity.enumeration.BasicEnum#getName()
 	 */
 	@Override
 	public String getName() {
