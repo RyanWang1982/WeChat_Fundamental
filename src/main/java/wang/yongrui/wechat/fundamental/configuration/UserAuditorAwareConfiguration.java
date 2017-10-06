@@ -25,8 +25,8 @@ public class UserAuditorAwareConfiguration implements AuditorAware<String> {
 	public String getCurrentAuditor() {
 		SecurityContext context = SecurityContextHolder.getContext();
 		String auditorUserName = null;
-		if (null != context && null != context.getAuthentication()
-				&& null != context.getAuthentication().getPrincipal()) {
+		if (null != context && null != context.getAuthentication() && null != context.getAuthentication().getPrincipal()
+				&& !"anonymousUser".equals(context.getAuthentication().getPrincipal())) {
 			auditorUserName = ((User) context.getAuthentication().getPrincipal()).getUsername();
 		}
 
