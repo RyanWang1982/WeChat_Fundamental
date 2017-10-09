@@ -35,11 +35,11 @@ public class UserBasic extends AuditingEntity {
 	@Column(nullable = false, unique = true)
 	private String username;
 
-	@Column(nullable = false)
-	private String firstName;
+	private String cnName;
 
-	@Column(nullable = false)
-	private String lastName;
+	private String enName;
+
+	private String nickName;
 
 	@Column(nullable = false)
 	@Enumerated(value = EnumType.STRING)
