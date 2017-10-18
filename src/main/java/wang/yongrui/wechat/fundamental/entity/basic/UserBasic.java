@@ -32,7 +32,7 @@ public class UserBasic extends AuditingEntity {
 	@GeneratedValue
 	private Long id;
 
-	@Column(nullable = false, unique = true)
+	@Column(unique = true)
 	private String username;
 
 	private String cnName;
@@ -51,7 +51,7 @@ public class UserBasic extends AuditingEntity {
 	@Column(unique = true)
 	private String mobileNumber;
 
-	@Column(nullable = false, unique = true)
+	@Column(unique = true)
 	private String email;
 
 	@Column(unique = true)
@@ -59,7 +59,7 @@ public class UserBasic extends AuditingEntity {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -72,7 +72,7 @@ public class UserBasic extends AuditingEntity {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
